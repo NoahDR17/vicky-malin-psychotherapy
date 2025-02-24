@@ -48,21 +48,21 @@ const NavBar = () => {
             <NavDropdown title="Services" id="services-dropdown">
               <NavDropdown.Item
                 as={Link}
-                to="/services/In-Person"
+                to="/services/in-person"
                 onClick={handleNavClick}
               >
                 In-Person
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/Online"
+                to="/services/online"
                 onClick={handleNavClick}
               >
                 Online
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
-                to="/services/WalkAndTalk"
+                to="/services/walkandtalk"
                 onClick={handleNavClick}
               >
                 Walk and Talk
