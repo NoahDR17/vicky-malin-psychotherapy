@@ -24,3 +24,19 @@
     color: black;
     border: 2px solid white;
   }
+
+.container {
+  width: 75%;
+}
+
+/* Media query to adjust button text size on smaller screens */
+@media (max-width: 425px) {
+  .homepage h1 {
+    font-size: 1.3rem;
+  }
+
+  .btn.consultation-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

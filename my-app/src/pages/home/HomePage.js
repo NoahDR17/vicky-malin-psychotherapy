@@ -13,17 +13,19 @@ const HomePage = () => {
 
     return (
         <div className="homepage">
-            <h1>
-                Victoria Malin<br />
-                counselling and Psychotherapy
-            </h1>
-            <Button
-                variant="primary"
-                size="lg"
-                className="consultation-btn"
-                onClick={handleClick}
-            >Book a free meeting today
-            </Button>
+            <div className="container">
+                <h1>
+                    Victoria Malin<br />
+                    Counselling & Psychotherapy
+                </h1>
+                <Button
+                    variant="primary"
+                    size="lg"
+                    className="consultation-btn"
+                    onClick={handleClick}
+                >Book a free meeting today
+                </Button>
+            </div>
         </div>
     );
 };
