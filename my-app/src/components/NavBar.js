@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../styles/Navbar.css'
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -24,7 +25,7 @@ const NavBar = () => {
   return (
     <Navbar
       ref={navRef}
-      bg="light"
+      className='navbar'
       expand="lg"
       expanded={expanded}
       onToggle={(nextExpanded) => setExpanded(nextExpanded)}
@@ -45,7 +46,7 @@ const NavBar = () => {
               About Me
             </Nav.Link>
 
-            <NavDropdown title="Services" id="services-dropdown">
+            <NavDropdown title="Services" id="services-dropdown" className='dropdown'>
               <NavDropdown.Item
                 as={Link}
                 to="/services/in-person"

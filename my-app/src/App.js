@@ -1,8 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import HomePage from './pages/home/HomePage';
 
-const Home = () => <h1>Home Page</h1>;
+const Home = () => <HomePage />;
 const About = () => <h1>About Me</h1>;
 const Services = () => <h1>All Services</h1>;
 const InPerson = () => <h1>In-Person Services</h1>;
