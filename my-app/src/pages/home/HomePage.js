@@ -22,7 +22,7 @@ const HomePage = () => {
                 size="lg"
                 className="consultation-btn"
                 onClick={handleClick}
-            >Book a free consultation meeting today
+            >Book a free meeting today
             </Button>
         </div>
     );
