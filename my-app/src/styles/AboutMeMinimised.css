@@ -6,9 +6,9 @@
 }
 
 .text-section {
-  display: flex;
   flex: 1;
   padding-right: 20px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -17,49 +17,25 @@
   margin-bottom: 25px;
 }
 
-.paragraph-section {
-  flex: 1;
-  padding-right: 20px;
-}
-  
+/* Desktop image: shown on larger screens */
 .image-section {
   flex: 0 0 35%;
 }
-  
+
 .image-section img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* Optional: adds rounded corners */
-}
-  
-.button-container {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  justify-content: space-between;
+  border-radius: 8px;
 }
 
-.btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
-
-.about-btn {
-  background-color: #007bff;
-  color: white;
-}
-
-.faq-btn {
-  background-color: #6c757d;
-  color: white;
+/* Mobile image: hidden on larger screens */
+.image-mobile {
+  display: none;
 }
 
 .hyperlink {
-  color: #007bff; /* A blue color for links */
+  color: #007bff;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -82,20 +58,19 @@
     text-align: center;
   }
 
+  /* Show the mobile image right after the header */
+  .image-mobile {
+    display: block;
+    margin: 20px 0;
+  }
+
+  /* Hide the desktop image on mobile */
+  .image-section {
+    display: none;
+  }
+
   .headers h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-  }
-
-  .image-section {
-    flex: 0 0 100%;
-    margin-top: 20px;
-  }
-
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
   }
 }
