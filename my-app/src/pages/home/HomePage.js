@@ -17,16 +17,16 @@ const HomePage = () => {
             <div className="homepage">
                 <div className="hero-container">
                     <h1>
-                        Victoria Malin<br />
+                        <span className='primary-h1'>Victoria Malin</span> <br />
                         <span className='secondary-h1'>Counselling & Psychotherapy</span>
                     </h1>
-                    <Button
+                    {/* <Button
                         variant="primary"
                         size="lg"
                         className="consultation-btn"
                         onClick={handleClick}
                     >Book a free consultation today
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
             <div className='container'>

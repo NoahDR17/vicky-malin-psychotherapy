@@ -24,22 +24,24 @@
   /* border: solid 2px var(--text-white); */
   /* border-radius: 5px; */
 /* } */
-
+.primary-h1 {
+  font-weight: bold;
+}
 .secondary-h1 {
   color: var(--text-white);
   font-size: 75%;
 }
 .btn.consultation-btn {
   margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.304);
-  color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--accent-color);
   border: 2px solid var(--text-white);
   transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 .btn.consultation-btn:hover {
-  color: var(--secondary-color);
-  background-color: rgb(2, 69, 9);
+  color: var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 2px solid var(--secondary-color);
 }
 
