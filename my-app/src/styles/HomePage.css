@@ -50,7 +50,7 @@
 /* Media query to adjust button text size on smaller screens */
 @media (max-width: 425px) {
   .homepage h1 {
-    font-size: 1.3rem;
+    font-size: 1.75rem;
   }
 
   .btn.consultation-btn {
