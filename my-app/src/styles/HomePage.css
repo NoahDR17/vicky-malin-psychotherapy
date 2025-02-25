@@ -1,29 +1,46 @@
+@import url("colorset.css");
 .homepage {
-    background-image: url(https://res.cloudinary.com/du7daaai2/image/upload/v1740406105/krml4cyuhp0g1jk04d3e.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-  }
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://res.cloudinary.com/du7daaai2/image/upload/v1740498931/pexels-harry-cooke-6195082_kjeo7u.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
   
+/* .hero-container { */
+  /* padding: 15px; */
+  /* background-color: rgba(255, 181, 223, 0.7); */
+  /* border: solid 2px var(--text-white); */
+  /* border-radius: 5px; */
+/* } */
+
+.secondary-h1 {
+  color: var(--text-white);
+  font-size: 75%;
+}
 .btn.consultation-btn {
   margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.304);
+  color: var(--secondary-color);
+  border: 2px solid var(--text-white);
   transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 .btn.consultation-btn:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-    border: 2px solid white;
+  color: var(--secondary-color);
+  background-color: rgb(2, 69, 9);
+  border: 2px solid var(--secondary-color);
 }
 
 .container {

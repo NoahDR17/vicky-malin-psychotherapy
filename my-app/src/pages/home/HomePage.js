@@ -15,10 +15,10 @@ const HomePage = () => {
     return (
         <>
             <div className="homepage">
-                <div className="container">
+                <div className="hero-container">
                     <h1>
                         Victoria Malin<br />
-                        Counselling & Psychotherapy
+                        <span className='secondary-h1'>Counselling & Psychotherapy</span>
                     </h1>
                     <Button
                         variant="primary"

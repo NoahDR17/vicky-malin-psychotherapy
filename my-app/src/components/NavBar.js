@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.css'
+import { NavLink } from 'react-router-dom';
+import '../styles/Navbar.css';
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -31,52 +31,51 @@ const NavBar = () => {
       onToggle={(nextExpanded) => setExpanded(nextExpanded)}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" onClick={handleNavClick}>
+        <Navbar.Brand as={NavLink} to="/" onClick={handleNavClick}>
           Victoria Malin
         </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
+        {/* Replace the default toggle icon with a custom "Menu" link */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          Menu
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/" onClick={handleNavClick}>
+            <Nav.Link as={NavLink} to="/" onClick={handleNavClick}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
+            <Nav.Link as={NavLink} to="/about" onClick={handleNavClick}>
               About Me
             </Nav.Link>
-
             <NavDropdown title="Services" id="services-dropdown" className='dropdown'>
               <NavDropdown.Item
-                as={Link}
+                as={NavLink}
                 to="/services/in-person"
                 onClick={handleNavClick}
               >
                 In-Person
               </NavDropdown.Item>
               <NavDropdown.Item
-                as={Link}
+                as={NavLink}
                 to="/services/online"
                 onClick={handleNavClick}
               >
                 Online
               </NavDropdown.Item>
               <NavDropdown.Item
-                as={Link}
+                as={NavLink}
                 to="/services/walkandtalk"
                 onClick={handleNavClick}
               >
                 Walk and Talk
               </NavDropdown.Item>
             </NavDropdown>
-
-            <Nav.Link as={Link} to="/resources" onClick={handleNavClick}>
+            <Nav.Link as={NavLink} to="/resources" onClick={handleNavClick}>
               Resources
             </Nav.Link>
-            <Nav.Link as={Link} to="/faq" onClick={handleNavClick}>
+            <Nav.Link as={NavLink} to="/faq" onClick={handleNavClick}>
               FAQ
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" onClick={handleNavClick}>
+            <Nav.Link as={NavLink} to="/contact" onClick={handleNavClick}>
               Contact
             </Nav.Link>
           </Nav>

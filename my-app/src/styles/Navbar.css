@@ -1,3 +1,65 @@
+@import url("colorset.css");
+
 .navbar {
-    background-color: #FFE8D7;
+    background-color: var(--primary-color);
 }
+
+/* Base styling for all nav links */
+.navbar a,
+.navbar .nav-link,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active,
+.navbar a:focus,
+.navbar .nav-link:link,
+.navbar .nav-link:visited,
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+    color: var(--text-white) !important;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover,
+.navbar .nav-link:hover {
+    color: #ffafda !important;
+}
+
+/* Override active state so that it remains white */
+.navbar a:active,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+    color: var(--text-white) !important;
+    border-bottom: 2px solid var(--accent-color) !important;
+}
+
+/* Override the dropdown menu background color */
+.navbar .dropdown-menu {
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: var(--text-white) !important;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    background-color: #ffafda !important;
+    color: var(--primary-color) !important;
+}
+/* Customize the toggle button */
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--text-white) !important;
+    border: 2px solid var(--text-white) !important;
+    border-radius: 5px;
+    font-size: 16px !important;
+    padding: 10px 20px;
+  }
+  
+  /* Remove any default icon styling */
+  .navbar-toggler-icon {
+    display: none;
+  }
