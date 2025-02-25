@@ -10,7 +10,7 @@ const AboutMeMinimised = () => {
     <div className="about-me-container">
       <div className="text-section">
         <div className="headers">
-          <h2>Hello, I'm Victoria.</h2>
+          <h2>Hi, I'm Victoria.</h2>
         </div>
         <div className="image-mobile">
           <img
