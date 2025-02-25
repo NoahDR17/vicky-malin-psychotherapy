@@ -1,0 +1,101 @@
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.text-section {
+  display: flex;
+  flex: 1;
+  padding-right: 20px;
+  flex-direction: column;
+}
+
+.headers h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.paragraph-section {
+  flex: 1;
+  padding-right: 20px;
+}
+  
+.image-section {
+  flex: 0 0 35%;
+}
+  
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+  
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.about-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.faq-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.hyperlink {
+  color: #007bff; /* A blue color for links */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .text-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .headers h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .image-section {
+    flex: 0 0 100%;
+    margin-top: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}

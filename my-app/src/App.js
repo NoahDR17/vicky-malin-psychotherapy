@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './pages/home/HomePage';
+import './App.css'
 
 const Home = () => <HomePage />;
 const About = () => <h1>About Me</h1>;
