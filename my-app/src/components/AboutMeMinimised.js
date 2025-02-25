@@ -11,10 +11,11 @@ const AboutMeMinimised = () => {
       <div className="text-section">
         <div className="headers">
           <h2>Hi, I'm Victoria.</h2>
+          <div className="underline"></div>
         </div>
         <div className="image-mobile">
           <img
-            src="https://res.cloudinary.com/du7daaai2/image/upload/v1738611418/media/images/default_profile_gxxvhh.jpg"
+            src="https://res.cloudinary.com/du7daaai2/image/upload/v1740507722/victoria_ikiloe.jpg"
             alt="Counsellor"
           />
         </div>
@@ -71,8 +72,8 @@ const AboutMeMinimised = () => {
       </div>
       <div className="image-section">
         <img
-          src="https://res.cloudinary.com/du7daaai2/image/upload/v1738611418/media/images/default_profile_gxxvhh.jpg"
-          alt="Counsellor"
+            src="https://res.cloudinary.com/du7daaai2/image/upload/v1740507722/victoria_ikiloe.jpg"
+            alt="Counsellor"
         />
       </div>
     </div>

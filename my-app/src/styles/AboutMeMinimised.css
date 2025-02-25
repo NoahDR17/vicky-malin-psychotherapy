@@ -18,7 +18,18 @@
 .headers h2 {
   color: var(--text-green);
   font-size: 2.5rem;
+}
+
+.headers .underline {
+  width: 90%;
+  height: 6px;
+  background-color: var(--accent-color);
+  border-radius: 0 10px 10px 0;
+  /* Rounds only the right end */
+  margin-top: 10px;
+  /* Spacing between the h2 and the underline */
   margin-bottom: 25px;
+
 }
 
 /* Desktop image: shown on larger screens */
@@ -64,15 +75,34 @@
     text-align: center;
   }
 
+  .headers .underline {
+    width: 90%;
+    height: 6px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    /* Equal rounding on both ends */
+    margin: 10px auto 25px auto;
+    /* Top margin 10px, bottom margin 25px, left/right auto centers the line */
+  }
+
   /* Show the mobile image right after the header */
   .image-mobile {
     display: block;
-    margin: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .image-mobile img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
   }
 
   /* Hide the desktop image on mobile */
   .image-section {
     display: none;
+
   }
 
   .headers h2 {
