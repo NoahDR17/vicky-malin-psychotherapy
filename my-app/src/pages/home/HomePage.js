@@ -1,16 +1,16 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import '../../styles/HomePage.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import AboutMeMinimised from '../../components/AboutMeMinimised';
 
 const HomePage = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleClick = () => {
-        navigate('/contact');
-    };
+    // const handleClick = () => {
+    //     navigate('/contact');
+    // };
 
     return (
         <>

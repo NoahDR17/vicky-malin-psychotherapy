@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AboutMeMinimised.css';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 
 const AboutMeMinimised = () => {
   const navigate = useNavigate();
