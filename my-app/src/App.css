@@ -1,7 +1,7 @@
 :root {
   /* Primary Colors */
   --primary-color: #032b22;      /* Used for body, header, nav, about section background, footer, etc. */
-  --accent-color: #ffafda;       /* Used for home-txt h1, left/right h3, and background on page 1 */
+  --accent-color: #c2759e;       /* Used for home-txt h1, left/right h3, and background on page 1 */
   --secondary-color: #40ffb5;    /* Used for headings in about, history h3, footer h3 */
   --submit-btn-color: #9cfffa;   /* Used in contact form h1 and submit button background */
   --light-bg: #efede7;           /* Used for backgrounds on pages 2, 3, and footer contact link */
