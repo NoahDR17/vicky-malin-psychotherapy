@@ -1,0 +1,157 @@
+@import url("colorset.css");
+
+.walk-and-talk {
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Set all paragraph text to black */
+.walk-and-talk p {
+    color: var(--text-black);
+}
+
+/* Header Section */
+.services-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.services-header h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.walk-and-talk h3 {
+    color: var(--text-green);
+}
+
+/* Photo Section */
+.service-photo {
+    margin-bottom: 2rem;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.photo-container img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Description Section */
+.service-description {
+    margin-bottom: 2rem;
+}
+
+.service-description h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.service-description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.service-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Fees Section */
+.fees {
+    margin-bottom: 2rem;
+}
+
+.fees h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.fees ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.fees ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.fees ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Contact Button Section */
+.contact-call {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Adjustments for screens up to 768px */
+@media (max-width: 768px) {
+    .walk-and-talk {
+        padding: 1rem;
+    }
+
+    .services-header h1 {
+        font-size: 2rem;
+    }
+
+    .services-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-description p {
+        font-size: 0.9rem;
+    }
+
+    .photo-container img {
+        max-width: 500px;
+    }
+}
+
+/* Further Adjustments for very small screens (up to 576px) */
+@media (max-width: 576px) {
+    .services-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .services-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-description h3,
+    .service-description h4 {
+        font-size: 1.3rem;
+    }
+
+    .service-description p {
+        font-size: 0.85rem;
+    }
+
+    .photo-container img {
+        max-width: 400px;
+    }
+}
