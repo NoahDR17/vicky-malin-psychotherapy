@@ -33,6 +33,11 @@
     border-bottom: 2px solid var(--accent-color) !important;
 }
 
+/* New rule: When the dropdown toggle (Services) is open, change its color */
+.navbar .nav-link.dropdown-toggle[aria-expanded="true"] {
+    color: var(--accent-color) !important;
+}
+
 /* Override the dropdown menu background color */
 .navbar .dropdown-menu {
     background-color: var(--primary-color);
@@ -65,7 +70,6 @@
     display: none;
 }
 
-
 /* Custom styling for the contact link as a button */
 .contact-link {
     padding-bottom: 10px !important;
@@ -79,7 +83,6 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-
 
 .contact-link:hover {
     border: 2px solid var(--accent-color) !important;
