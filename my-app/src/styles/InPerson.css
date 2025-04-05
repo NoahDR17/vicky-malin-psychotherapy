@@ -5,6 +5,10 @@
   font-family: Arial, sans-serif;
 }
 
+.map-container iframe {
+  height: 450px;
+}
+
 /* Set all paragraph text to black */
 .inperson-services p {
   color: var(--text-black);
@@ -169,7 +173,7 @@
   
   /* Adjust map container height on smaller screens */
   .map-container iframe {
-    height: 200px;
+    height: 300px;
   }
 
   .office-photos img {
@@ -202,7 +206,7 @@
   }
   
   .map-container iframe {
-    height: 180px;
+    height: 200px;
   }
   
   /* Reduce gap between office photos rows */
