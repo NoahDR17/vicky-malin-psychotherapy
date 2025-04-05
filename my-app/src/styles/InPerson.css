@@ -1,0 +1,216 @@
+@import url("colorset.css");
+
+.inperson-services {
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Set all paragraph text to black */
+.inperson-services p {
+  color: var(--text-black);
+}
+
+/* Header Section */
+.services-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.services-header h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+/* Location Section */
+.service-location {
+  margin-bottom: 2rem;
+}
+
+.service-location h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.address-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.map-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* In-Person Therapy Description */
+.service-description {
+  margin-bottom: 2rem;
+}
+
+.service-description h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.service-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Home Visits Section */
+.home-visits {
+  margin-bottom: 2rem;
+}
+
+.home-visits h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.home-visits p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Fees Section */
+.fees {
+  margin-bottom: 2rem;
+}
+
+.fees h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.fees ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.fees ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.fees ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* Office Photos Section */
+.office-photos {
+  margin-bottom: 2rem;
+  text-align: center; /* Ensures headings and text are centered */
+}
+
+.office-photos h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.office-photos .row {
+  margin-top: 1rem;
+}
+
+.office-photos img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Default maximum width on large screens */
+  display: block;   /* Make image a block-level element */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto;
+}
+
+/* Responsive Adjustments for screens up to 768px */
+@media (max-width: 768px) {
+  .inperson-services {
+    padding: 1rem;
+  }
+  
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  
+  .services-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .address-text {
+    font-size: 1rem;
+  }
+  
+  .service-description p,
+  .home-visits p,
+  .fees ul li {
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust map container height on smaller screens */
+  .map-container iframe {
+    height: 200px;
+  }
+
+  .office-photos img {
+    max-width: 250px;
+  }
+}
+
+/* Further Adjustments for very small screens (up to 576px) */
+@media (max-width: 576px) {
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .services-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .service-location h3,
+  .service-description h3,
+  .home-visits h3,
+  .fees h3,
+  .office-photos h3 {
+    font-size: 1.5rem;
+  }
+  
+  .service-description p,
+  .home-visits p,
+  .fees ul li {
+    font-size: 0.85rem;
+  }
+  
+  .map-container iframe {
+    height: 180px;
+  }
+  
+  /* Reduce gap between office photos rows */
+  .office-photos .row {
+    margin-top: 0.5rem;
+  }
+
+  .office-photos img {
+    max-width: 200px;
+  }
+}
