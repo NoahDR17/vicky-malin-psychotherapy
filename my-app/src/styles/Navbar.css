@@ -53,8 +53,8 @@
 /* Customize the toggle button */
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.7);
-    color: var(--text-white);
-    border: 2px solid var(--accent-color) !important;
+    color: var(--text-white) !important;
+    border: 2px solid var(--text-green) !important;
     border-radius: 5px;
     font-size: 16px !important;
     padding: 10px 20px;

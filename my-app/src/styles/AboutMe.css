@@ -19,12 +19,31 @@
     --overlay-color: rgba(75, 75, 75, 0.75);
 }
 
+/* Ensure the container has relative positioning */
+.profile-card {
+    position: relative;
+    padding-top: 75px; /* Creates space for the overlapping image (half of 150px) */
+    margin-top: 15px;
+}
+  
+/* Profile image styling with overlapping effect */
 .profile-image {
+    position: absolute;
+    top: -75px; /* Moves half the image height above the container */
+    left: 50%;
+    transform: translateX(-50%);
     width: 150px;
-    /* Adjust as needed */
-    height: 150px;
+    height: 125px;
     object-fit: cover;
     border-radius: 50%;
+    border: 3px solid var(--light-bg);
+}
+  
+.text {
+    padding-top: 75px;
+}
+.text p, .text h2, .text h4 {
+    text-align: left;
 }
 
 /* Container for the About Me page */
@@ -43,7 +62,7 @@
     border-radius: 0.5rem;
     margin-bottom: 2rem;
     text-align: left;
-}
+} 
 
 .about-header h1 {
     color: var(--accent-color);
@@ -91,12 +110,43 @@
     border-radius: 8px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-
-    /* Remove centering for smaller screens */
+    .text {
+        padding-top: 50px;
+    }
+    
+    .text h2 {
+        text-align: center;
+    }
+    .text h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .text p {
+        font-size: 12px;
+    }
+    
+    /* Adjust header and container padding for mobile */
     .about-header,
     .about-container {
+        padding: 0 1rem;
+        padding-top: 25px;
         text-align: left;
+    }
+    
+    /* Reduce card text size slightly */
+    .about-card-text {
+        font-size: 0.9rem;
+    }
+    .profile-image {
+        width: 120px; /* Reduce from 33% to 50% of its container */
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 110px; /* Reduce from 33% to 50% of its container */
     }
 }

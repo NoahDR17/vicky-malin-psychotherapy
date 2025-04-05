@@ -15,11 +15,14 @@ const AboutMe = () => {
             roundedCircle
             className="profile-image mb-3"
           />
-          <h2>Victoria Malin</h2>
-          <h4>Counsellor & Psychotherapist</h4>
-          <p>
-            I am a qualified and insured psychotherapist based in Southport, Merseyside. I completed my training at the University of Central Lancashire in 2023, and I am a registered member of the British Association of Counselling and Psychotherapy (BACP). The BACP is the UK's leading professional body for the counselling professions, promoting safe, ethical, and competent practice, and working to improve psychological wellbeing and mental health. You can find me on their list of registered members. As a member of the BACP, I abide by its ethical framework, which includes regular supervision of my work, as well as ensuring I undertake Continuous Professional Development (CPD)/training.
-          </p>
+          <div className='text'>
+            <h2>Victoria Malin</h2>
+            <h4>Counsellor & Psychotherapist</h4>
+            <hr />
+            <p>
+              I am a qualified and insured psychotherapist based in Southport, Merseyside. I completed my training at the University of Central Lancashire in 2023, and I am a registered member of the British Association of Counselling and Psychotherapy (BACP). The BACP is the UK's leading professional body for the counselling professions, promoting safe, ethical, and competent practice, and working to improve psychological wellbeing and mental health. You can find me on their list of registered members. As a member of the BACP, I abide by its ethical framework, which includes regular supervision of my work, as well as ensuring I undertake Continuous Professional Development (CPD)/training.
+            </p>
+          </div>
         </Card.Body>
       </Card>
 
