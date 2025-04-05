@@ -1,0 +1,196 @@
+@import url("colorset.css");
+
+.online-services {
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Set all paragraph text to black */
+.online-services p {
+  color: var(--text-black);
+}
+
+/* Header Section */
+.services-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.services-header h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+/* Online Platform Section */
+.service-platform {
+  margin-bottom: 2rem;
+}
+
+.service-platform h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.platform-description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.platform-image {
+  text-align: center;
+}
+
+.platform-image img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Online Therapy Description Section */
+.service-description {
+  margin-bottom: 2rem;
+}
+
+.service-description h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.service-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Fees Section */
+.fees {
+  margin-bottom: 2rem;
+}
+
+.fees h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.fees ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.fees ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.fees ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* Contact Button Section */
+.contact-call {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Online Therapy Screenshots Section */
+.platform-photos {
+  margin-bottom: 2rem;
+}
+
+.platform-photos h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.platform-photos .row {
+  margin-top: 1rem;
+}
+
+.platform-photos img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Adjustments for screens up to 768px */
+@media (max-width: 768px) {
+  .online-services {
+    padding: 1rem;
+  }
+  
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  
+  .services-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .platform-description {
+    font-size: 1rem;
+  }
+  
+  .service-description p,
+  .fees ul li {
+    font-size: 0.9rem;
+  }
+  
+  .platform-image img,
+  .platform-photos img {
+    max-width: 250px;
+  }
+}
+
+/* Further Adjustments for very small screens (up to 576px) */
+@media (max-width: 576px) {
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .services-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .service-platform h3,
+  .service-description h3,
+  .fees h3,
+  .platform-photos h3 {
+    font-size: 1.5rem;
+  }
+  
+  .service-description p,
+  .fees ul li {
+    font-size: 0.85rem;
+  }
+  
+  .platform-image img,
+  .platform-photos img {
+    max-width: 200px;
+  }
+}
