@@ -69,19 +69,14 @@ const NavBar = () => {
                 Walk and Talk
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={NavLink} to="/resources" onClick={handleNavClick}>
-              Resources
-            </Nav.Link>
             <Nav.Link as={NavLink} to="/faq" onClick={handleNavClick}>
               FAQ
             </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              to="/contact"
-              onClick={handleNavClick}
-              className="contact-link"
-            >
-              Get in Touch
+            <Nav.Link as={NavLink} to="/resources" onClick={handleNavClick}>
+              Resources
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" onClick={handleNavClick}>
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
