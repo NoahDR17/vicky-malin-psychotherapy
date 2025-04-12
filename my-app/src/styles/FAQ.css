@@ -1,0 +1,135 @@
+@import url("colorset.css");
+
+.faq {
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  color: var(--text-black);
+  background-color: var(--light-bg);
+}
+
+.faq-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faq-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Fees and Service Options Section */
+.faq-fees {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.faq-fees h3 {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.faq-fees ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.faq-fees ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-fees p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.service-options {
+  margin: 1rem 0;
+}
+
+.service-option {
+  font-weight: bold;
+  margin: 0 10px;
+  color: var(--accent-color);
+}
+
+.contact-link {
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
+}
+
+/* Accordion FAQ Items */
+.accordion-item {
+  border: none;
+  background-color: var(--light-bg);
+}
+
+.accordion-button {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-color)!important;
+  color: var(--text-white)!important;
+}
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none!important;
+  box-shadow: none!important;
+}
+.accordion-body {
+  background-color: var(--light-bg);
+  color: var(--text-black);
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+}
+/* .accordion-button:focus,
+.accordion-button:active {
+  outline: none;
+  box-shadow: none;
+} */
+/* Responsive adjustments for screens up to 768px */
+@media (max-width: 768px) {
+  .faq-header h1 {
+    font-size: 2rem;
+  }
+  
+  .faq-fees h3 {
+    font-size: 1.5rem;
+  }
+  
+  .faq-fees ul li,
+  .faq-fees p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Further adjustments for screens up to 576px */
+@media (max-width: 576px) {
+  .faq {
+    padding: 1rem;
+  }
+  
+  .faq-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .faq-fees h3 {
+    font-size: 1.3rem;
+  }
+  
+  .faq-fees ul li,
+  .faq-fees p {
+    font-size: 0.8rem;
+  }
+}

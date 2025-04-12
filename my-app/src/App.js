@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import InPersonPage from './pages/services/InPersonPage';
 import OnlinePage from './pages/services/OnlinePage';
 import WalkAndTalkPage from './pages/services/WalkAndTalkPage';
+import FAQPage from './pages/FAQ/FAQPage';
 
 import './App.css'
 import Footer from './components/Footer';
@@ -16,8 +17,8 @@ const Services = () => <h1>All Services</h1>;
 const InPerson = () => <InPersonPage />;
 const Online = () => <OnlinePage />;
 const WalkAndTalk = () => <WalkAndTalkPage />;
+const FAQ = () => <FAQPage />;
 const Resources = () => <h1>Resources</h1>;
-const FAQ = () => <h1>FAQ</h1>;
 const Contact = () => <h1>Contact</h1>;
 
 function App() {
