@@ -24,8 +24,8 @@ const FAQ = () => {
       {/* Accordion for FAQ items */}
       <Accordion defaultActiveKey="0">
         {/* 1. Availability */}
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>What is your availability?</Accordion.Header>
+        <Accordion.Item eventKey="199">
+          <Accordion.Header>What is my availability?</Accordion.Header>
           <Accordion.Body>
             <p>
               I offer sessions Monday to Saturday flexibly. My day usually starts from 10.00 and may end at 20.00. The first half of the week (Monday to Wednesday) I work from my Southport office, while other days I am available for home visits, online and telephone appointments. Sessions are 60 minutes long and usually take place weekly or fortnightly. Sessions are usually booked on an ongoing basis with regular reviews of progress to make sure they are meeting your needs.
