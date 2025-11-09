@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Button, Spinner } from 'react-bootstrap';
-import '../styles/InPerson.css';
+import React, { useState } from "react";
+import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
+import "../styles/InPerson.css";
+import off1 from "../assets/off1.jpeg";
+import off2 from "../assets/off2.jpeg";
+import off3 from "../assets/off3.jpeg";
 
 const InPerson = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +28,10 @@ const InPerson = () => {
         </p>
 
         {/* Relative container so the absolute-positioned spinner can center properly */}
-        <div className="map-container position-relative" style={{ minHeight: 250 }}>
+        <div
+          className="map-container position-relative"
+          style={{ minHeight: 250 }}
+        >
           {isLoading && (
             <div
               className="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
@@ -53,18 +59,14 @@ const InPerson = () => {
       {/* In-Person Therapy Description */}
       <section className="service-description mb-4">
         <h3>In-Person Therapy Sessions in a Comfortable, Welcoming Space</h3>
-        <p>
-          I see most clients face-to-face...
-        </p>
+        <p>I see most clients face-to-face...</p>
         {/* ...rest of your content... */}
       </section>
 
       {/* Home Visits Section */}
       <section className="home-visits mb-4">
         <h3>Home Visits – Therapy in the Comfort of Your Own Space</h3>
-        <p>
-          If you’re limited by accessibility...
-        </p>
+        <p>If you’re limited by accessibility...</p>
       </section>
 
       {/* Fees Section */}
@@ -79,33 +81,26 @@ const InPerson = () => {
 
       {/* Contact Button */}
       <section className="contact-call text-center mb-4">
-        <Button href="/contact" variant="primary">Contact Me</Button>
+        <Button href="/contact" variant="primary">
+          Contact Me
+        </Button>
       </section>
 
       {/* Office Photos Section */}
       <section className="office-photos mb-4">
-        <h3 className="text-center">Office Photos</h3>
+        <h3 className="text-center">Office Gallery
+</h3>
         <Row className="g-3">
           <Col md={4}>
-            <img
-              src="https://res.cloudinary.com/du7daaai2/image/upload/v1734446068/default_post_w4tzg1.jpg"
-              alt="Office 1"
-              className="img-fluid"
-            />
+            <img src={off2} alt="Office 1" className="img-fluid" />
           </Col>
           <Col md={4}>
-            <img
-              src="https://res.cloudinary.com/du7daaai2/image/upload/v1734446068/default_post_w4tzg1.jpg"
-              alt="Office 2"
-              className="img-fluid"
-            />
+          <img src={off1} alt="Office 2" className="img-fluid" />
+
           </Col>
           <Col md={4}>
-            <img
-              src="https://res.cloudinary.com/du7daaai2/image/upload/v1734446068/default_post_w4tzg1.jpg"
-              alt="Office 3"
-              className="img-fluid"
-            />
+          <img src={off3} alt="Office 3" className="img-fluid" />
+
           </Col>
         </Row>
       </section>

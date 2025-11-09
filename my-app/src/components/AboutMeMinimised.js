@@ -10,7 +10,7 @@ const AboutMeMinimised = () => {
     <div className="about-me-container">
       <div className="text-section">
         <div className="headers">
-          <h2>Hi, I'm Victoria.</h2>
+          <h2>Welcome</h2>
           <div className="underline"></div>
         </div>
         <div className="image-mobile">
@@ -20,7 +20,7 @@ const AboutMeMinimised = () => {
           />
         </div>
         <p>
-          Welcome and thank you for visiting my website. <br /><br />
+          Hi, I'm Victoria. Thank you for visiting my website. <br /><br />
           I’m a qualified and{' '}
           <span
             className="hyperlink"

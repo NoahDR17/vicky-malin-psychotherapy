@@ -1,10 +1,10 @@
 @import url("colorset.css");
 .homepage {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.1)
     ),
-    url(https://res.cloudinary.com/du7daaai2/image/upload/v1740498931/pexels-harry-cooke-6195082_kjeo7u.jpg);
+    url(../assets/bck1.jpeg);
   background-size: cover;
   background-position: center;
   width: 100%;

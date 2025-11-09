@@ -5,7 +5,7 @@
     --secondary-color: #40ffb5;    /* Used for headings in about, history h3, footer h3 */
     --submit-btn-color: #9cfffa;   /* Used in contact form h1 and submit button background */
     --light-bg: #efede7;           /* Used for backgrounds on pages 2, 3, and footer contact link */
-    
+    --primary-color2: #053c30;      /* Used for body, header, nav, about section background, footer, etc. */
     /* Text Colors */
     --text-white: #ffffff;         /* Common white text color */
     --text-black: #000000;         /* Used for black text in some sections */
