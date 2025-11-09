@@ -1,23 +1,5 @@
-:root {
-    /* Primary Colors */
-    --primary-color: #032b22;
-    --accent-color: #c2759e;
-    --secondary-color: #40ffb5;
-    --submit-btn-color: #9cfffa;
-    --light-bg: #efede7;
-
-    /* Text Colors */
-    --text-white: #ffffff;
-    --text-black: #000000;
-    --text-light: whitesmoke;
-    --text-green: #006d36;
-
-    /* Links and Accents */
-    --footer-link-color: #053f33;
-
-    /* Overlays */
-    --overlay-color: rgba(75, 75, 75, 0.75);
-}
+/* Import color variables from main colorset */
+@import url("colorset.css");
 
 /* Ensure the container has relative positioning */
 .profile-card {
