@@ -22,7 +22,7 @@
 /* Hover effect */
 .navbar a:hover,
 .navbar .nav-link:hover {
-    color: #ffafda;
+    color: var(--accent-color);
 }
 
 /* Override active state so that it remains white */
@@ -51,7 +51,7 @@
 
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item:focus {
-    background-color: #ffafda;
+    background-color: var(--secondary-light);
     color: var(--primary-color) !important;
 }
 

@@ -5,17 +5,20 @@
     --secondary-color: #40ffb5;    /* Used for headings in about, history h3, footer h3 */
     --submit-btn-color: #9cfffa;   /* Used in contact form h1 and submit button background */
     --light-bg: #efede7;           /* Used for backgrounds on pages 2, 3, and footer contact link */
-    --primary-color2: #053c30;      /* Used for body, header, nav, about section background, footer, etc. */
+    
     /* Text Colors */
     --text-white: #ffffff;         /* Common white text color */
-    --text-black: #000000;         /* Used for black text in some sections */
-    --text-light: whitesmoke;      /* Lighter text, for example in footer p */
-    --text-green: #006d36;      /* Used for body, header, nav, about section background, footer, etc. */
+    --text-black: #2c3e37;         /* Softer dark green-grey instead of pure black */
+    --text-light: #f5f2ed;         /* Lighter text matching light-bg */
+    --text-muted: #6b7d74;         /* Muted green-grey for secondary text */
+    --text-green: #2d6b57;         /* Medium green for emphasis text */
 
     /* Links and Accents */
-    --footer-link-color: #053f33;  /* Used for footer contact links */
+    --link-color: #5db89f;         /* Sage-teal for links */
+    --link-hover: #7ecdb9;         /* Lighter teal on hover */
+    --footer-link-color: #2d6b57;  /* Medium green for footer links */
     
     /* Overlays */
-    --overlay-color: rgba(75, 75, 75, 0.75); /* Used in the contact page overlay */
+    --overlay-color: rgba(26, 77, 62, 0.75); /* Green-tinted overlay matching primary */
   }
   
