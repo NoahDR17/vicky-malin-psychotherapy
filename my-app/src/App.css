@@ -1,21 +1,39 @@
 :root {
-  /* Primary Colors */
-  --primary-color: #032b22;      /* Used for body, header, nav, about section background, footer, etc. */
-  --accent-color: #c2759e;       /* Used for home-txt h1, left/right h3, and background on page 1 */
-  --secondary-color: #40ffb5;    /* Used for headings in about, history h3, footer h3 */
-  --submit-btn-color: #9cfffa;   /* Used in contact form h1 and submit button background */
-  --light-bg: #efede7;           /* Used for backgrounds on pages 2, 3, and footer contact link */
-  
-  /* Text Colors */
-  --text-white: #ffffff;         /* Common white text color */
-  --text-black: #000000;         /* Used for black text in some sections */
-  --text-light: whitesmoke;      /* Lighter text, for example in footer p */
-  
-  /* Links and Accents */
-  --footer-link-color: #053f33;  /* Used for footer contact links */
-  
-  /* Overlays */
-  --overlay-color: rgba(75, 75, 75, 0.75); /* Used in the contact page overlay */
+    /* Primary Colors - Tranquil Greens */
+    --primary-color: #1a4d3e;      /* Deeper forest green - more sophisticated than original */
+    --primary-dark: #0f3029;       /* Even darker green for depth */
+    --primary-light: #2d6b57;      /* Lighter forest green for hover states */
+    
+    /* Secondary Colors - Harmonious Supporting Tones */
+    --secondary-color: #5db89f;    /* Soft sage-teal - calmer than bright turquoise */
+    --secondary-light: #7ecdb9;    /* Light sage-teal for highlights */
+    
+    /* Accent Colors - Warm Earth Tones */
+    --accent-color: #d4a574;       /* Warm sandy gold - replaces harsh pink */
+    --accent-warm: #c9956b;        /* Deeper warm tone for emphasis */
+    
+    /* Tertiary Colors - Soft Supporting Tones */
+    --tertiary-color: #b8c5c0;     /* Soft mint-grey for subtle elements */
+    --submit-btn-color: #7ecdb9;   /* Soft teal for buttons - harmonious with palette */
+    
+    /* Background Colors */
+    --light-bg: #f5f2ed;           /* Warmer cream - less grey, more inviting */
+    --card-bg: #ffffff;            /* Pure white for cards */
+    
+    /* Text Colors */
+    --text-white: #ffffff;         /* Common white text color */
+    --text-black: #2c3e37;         /* Softer dark green-grey instead of pure black */
+    --text-light: #f5f2ed;         /* Lighter text matching light-bg */
+    --text-muted: #6b7d74;         /* Muted green-grey for secondary text */
+    --text-green: #2d6b57;         /* Medium green for emphasis text */
+
+    /* Links and Accents */
+    --link-color: #5db89f;         /* Sage-teal for links */
+    --link-hover: #7ecdb9;         /* Lighter teal on hover */
+    --footer-link-color: #2d6b57;  /* Medium green for footer links */
+    
+    /* Overlays */
+    --overlay-color: rgba(26, 77, 62, 0.75); /* Green-tinted overlay matching primary */
 }
 
 #root {
