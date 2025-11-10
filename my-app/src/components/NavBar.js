@@ -34,10 +34,8 @@ const NavBar = () => {
         <Navbar.Brand as={NavLink} to="/" onClick={handleNavClick}>
           Victoria Malin
         </Navbar.Brand>
-        {/* Replace the default toggle icon with a custom "Menu" link */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          Menu
-        </Navbar.Toggle>
+        {/* Toggle icon for mobile navigation */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/" onClick={handleNavClick}>
