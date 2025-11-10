@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
   color: var(--text-black);
   background-color: var(--light-bg);
-  text-align: center; /* Default alignment for larger screens */
 }
 
 .resources-header {
@@ -17,88 +16,197 @@
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
-  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .resources-header h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-green);
-  text-align: center;
+  font-weight: 400;
 }
 
 /* Introductory text */
 .resources-intro {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: left;
 }
 
-/* Resource Category */
-.resource-category {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.resource-category h3 {
-  font-size: 1.75rem;
-  color: var(--primary-color);
+.resources-intro p {
   margin-bottom: 1rem;
-  text-align: center;
+}
+
+.resources-intro .disclaimer {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+/* Resource Categories */
+.resource-categories {
+  margin-top: 2rem;
+}
+
+/* Resource Cards */
+.resource-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.resource-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.urgent-card {
+  border-top: 4px solid #dc3545;
+}
+
+.urgent-card .card-body {
+  background: linear-gradient(to bottom, rgba(220, 53, 69, 0.02), #ffffff);
+}
+
+/* Category Title */
+.category-title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--secondary-color);
+  font-weight: 600;
+  position: relative;
+}
+
+.urgent-badge {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  margin-right: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Resource List */
 .resource-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: center;
+  margin: 0;
 }
 
-.resource-list li {
-  margin-bottom: 0.75rem;
+.resource-item {
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  background-color: rgba(245, 242, 237, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.resource-item:hover {
+  background-color: rgba(245, 242, 237, 0.8);
+}
+
+.resource-item strong {
+  display: block;
+  color: var(--text-black);
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.resource-list a {
-  color: var(--accent-color);
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resource-link {
+  color: var(--link-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
 }
 
-.resource-list a:hover {
-  text-decoration: underline;
+.resource-link:hover {
+  color: var(--link-hover);
+  background-color: rgba(93, 184, 159, 0.1);
+  text-decoration: none;
 }
 
-/* Responsive adjustments for screens up to 768px */
+.link-separator {
+  color: var(--text-muted);
+  margin: 0 0.25rem;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 992px) {
+  .resources-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .resources-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+  .resources {
+    padding: 1.5rem 1rem;
+  }
+
   .resources-header h1 {
     font-size: 2rem;
   }
   
   .resources-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .resources-intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
-  .resource-category h3 {
-    font-size: 1.5rem;
+  .category-title {
+    font-size: 1.2rem;
   }
-  
-  .resource-list li {
+
+  .resource-item strong {
+    font-size: 0.95rem;
+  }
+
+  .resource-link {
     font-size: 0.9rem;
   }
 }
 
-/* Further adjustments for screens up to 576px */
+/* Further adjustments for small mobile */
 @media (max-width: 576px) {
   .resources {
-    padding: 1rem;
+    padding: 1rem 0.75rem;
   }
   
   .resources-header h1 {
@@ -106,33 +214,40 @@
   }
   
   .resources-header h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .resources-intro {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
-  .resource-category h3 {
-    font-size: 1.3rem;
+  .category-title {
+    font-size: 1.1rem;
   }
-  
-  .resource-list li {
-    font-size: 0.85rem;
+
+  .resource-item {
+    padding: 0.6rem;
+  }
+
+  .resource-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-separator {
+    display: none;
   }
 }
 
-/* New: For screens 425px and less, force text-align to left */
-@media (max-width: 425px) {
-  .resources,
-  .resources-header,
-  .resources-header h1,
-  .resources-header h2,
-  .resources-intro,
-  .resource-category,
-  .resource-category h3,
-  .resource-list,
-  .resource-list li {
-    text-align: left !important;
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .resource-card,
+  .resource-item,
+  .resource-link {
+    transition: none;
+  }
+  
+  .resource-card:hover {
+    transform: none;
   }
 }
