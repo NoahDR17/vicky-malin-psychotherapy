@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
+import { ReactComponent as HamburgerIcon } from '../assets/icons/icon-hamburger.svg';
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -35,7 +36,9 @@ const NavBar = () => {
           Victoria Malin
         </Navbar.Brand>
         {/* Toggle icon for mobile navigation */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <HamburgerIcon />
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/" onClick={handleNavClick}>
