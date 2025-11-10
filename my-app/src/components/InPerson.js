@@ -54,19 +54,52 @@ const InPerson = () => {
             onLoad={handleIframeLoad}
           />
         </div>
+        <p>
+          The Practice is situated in the centre of Southport and is easily
+          accessible by train and car. Southport Station is a short walk away (4
+          mins) and there are a number of local pay and display parking options
+          - Hill St and surrounding roads. Sainsbury's car park can also be used
+          for up to 2 hours with a £5 in-store spend.
+        </p>
       </section>
 
       {/* In-Person Therapy Description */}
       <section className="service-description mb-4">
-        <h3>In-Person Therapy Sessions in a Comfortable, Welcoming Space</h3>
-        <p>I see most clients face-to-face...</p>
-        {/* ...rest of your content... */}
+        <h3>In-Person Sessions</h3>
+        <p>
+          The office is a calm and welcoming space where we can sit in comfort
+          to explore what you would like to bring.
+        </p>
+        {/* Office Photos Section */}
+        <section className="office-photos mb-4">
+          <Row className="g-3">
+            <Col md={4}>
+              <img src={off2} alt="Office 1" className="img-fluid" />
+            </Col>
+            <Col md={4}>
+              <img src={off1} alt="Office 2" className="img-fluid" />
+            </Col>
+            <Col md={4}>
+              <img src={off3} alt="Office 3" className="img-fluid" />
+            </Col>
+          </Row>
+        </section>
       </section>
 
       {/* Home Visits Section */}
       <section className="home-visits mb-4">
         <h3>Home Visits – Therapy in the Comfort of Your Own Space</h3>
-        <p>If you’re limited by accessibility...</p>
+        <p>
+          If attending sessions in person is difficult due to accessibility,
+          health, mobility, or personal circumstances, I offer home visits to
+          ensure you can still receive the support you need. Therapy in your own
+          environment can feel more comfortable, grounding, and less
+          overwhelming, allowing you to engage at your own pace. Home visits are
+          arranged with care, discretion, and respect for your personal space.
+          If you feel this approach would support your wellbeing, we can discuss
+          availability, suitability, and any practical considerations during
+          your initial enquiry.
+        </p>
       </section>
 
       {/* Fees Section */}
@@ -84,25 +117,6 @@ const InPerson = () => {
         <Button href="/contact" variant="primary">
           Contact Me
         </Button>
-      </section>
-
-      {/* Office Photos Section */}
-      <section className="office-photos mb-4">
-        <h3 className="text-center">Office Gallery
-</h3>
-        <Row className="g-3">
-          <Col md={4}>
-            <img src={off2} alt="Office 1" className="img-fluid" />
-          </Col>
-          <Col md={4}>
-          <img src={off1} alt="Office 2" className="img-fluid" />
-
-          </Col>
-          <Col md={4}>
-          <img src={off3} alt="Office 3" className="img-fluid" />
-
-          </Col>
-        </Row>
       </section>
     </Container>
   );
