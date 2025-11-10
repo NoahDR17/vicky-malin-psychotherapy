@@ -15,101 +15,115 @@ const InPerson = () => {
   return (
     <Container className="inperson-services my-5">
       {/* Header */}
-      <header className="services-header text-center mb-4">
+      <header className="services-header text-center mb-5">
         <h1>SERVICES</h1>
         <h2>IN-PERSON</h2>
       </header>
 
       {/* Location Section with Address and Google Map */}
-      <section className="service-location mb-4">
-        <h3 className="text-center">Southport Town Centre Consulting Room</h3>
-        <p className="address-text text-center">
-          Unit 2, 19 Anchor Street, Southport, PR9 0UT, England
-        </p>
+      <section className="service-location mb-5">
+        <div className="section-card">
+          <h3 className="text-center mb-3">Southport Town Centre Consulting Room</h3>
+          <p className="address-text text-center mb-4">
+            Unit 2, 19 Anchor Street, Southport, PR9 0UT, England
+          </p>
 
-        {/* Relative container so the absolute-positioned spinner can center properly */}
-        <div
-          className="map-container position-relative"
-          style={{ minHeight: 250 }}
-        >
-          {isLoading && (
-            <div
-              className="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
-              style={{ zIndex: 10 }}
-            >
-              <Spinner animation="border" role="status" variant="dark">
-                <span className="visually-hidden">Loading map...</span>
-              </Spinner>
-            </div>
-          )}
+          {/* Relative container so the absolute-positioned spinner can center properly */}
+          <div
+            className="map-container position-relative mb-3"
+            style={{ minHeight: 250 }}
+          >
+            {isLoading && (
+              <div
+                className="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+                style={{ zIndex: 10 }}
+              >
+                <Spinner animation="border" role="status" variant="dark">
+                  <span className="visually-hidden">Loading map...</span>
+                </Spinner>
+              </div>
+            )}
 
-          <iframe
-            title="Office Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.5149907367177!2d-3.019135684220558!3d53.64518598008516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb3b64ec75b41%3A0x1b72a1c3e5efc0e2!2sUnit%202%2C%2019%20Anchor%20St%2C%20Southport%20PR9%200UT%2C%20UK!5e0!3m2!1sen!2sus!4v1616581401988!5m2!1sen!2sus"
-            width="100%"
-            height="250"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            onLoad={handleIframeLoad}
-          />
+            <iframe
+              title="Office Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.5149907367177!2d-3.019135684220558!3d53.64518598008516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb3b64ec75b41%3A0x1b72a1c3e5efc0e2!2sUnit%202%2C%2019%20Anchor%20St%2C%20Southport%20PR9%200UT%2C%20UK!5e0!3m2!1sen!2sus!4v1616581401988!5m2!1sen!2sus"
+              width="100%"
+              height="250"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              onLoad={handleIframeLoad}
+            />
+          </div>
+          <p className="parking-info">
+            The Practice is situated in the centre of Southport and is easily
+            accessible by train and car. Southport Station is a short walk away (4
+            mins) and there are a number of local pay and display parking options
+            - Hill St and surrounding roads. Sainsbury's car park can also be used
+            for up to 2 hours with a £5 in-store spend.
+          </p>
         </div>
-        <p>
-          The Practice is situated in the centre of Southport and is easily
-          accessible by train and car. Southport Station is a short walk away (4
-          mins) and there are a number of local pay and display parking options
-          - Hill St and surrounding roads. Sainsbury's car park can also be used
-          for up to 2 hours with a £5 in-store spend.
-        </p>
       </section>
 
       {/* In-Person Therapy Description */}
-      <section className="service-description mb-4">
-        <h3>In-Person Sessions</h3>
-        <p>
-          The office is a calm and welcoming space where we can sit in comfort
-          to explore what you would like to bring.
-        </p>
-        {/* Office Photos Section */}
-        <section className="office-photos mb-4">
-          <Row className="g-3">
-            <Col md={4}>
-              <img src={off2} alt="Office 1" className="img-fluid" />
-            </Col>
-            <Col md={4}>
-              <img src={off1} alt="Office 2" className="img-fluid" />
-            </Col>
-            <Col md={4}>
-              <img src={off3} alt="Office 3" className="img-fluid" />
-            </Col>
-          </Row>
-        </section>
+      <section className="service-description mb-5">
+        <div className="section-card">
+          <h3 className="mb-3">In-Person Sessions</h3>
+          <p className="mb-4">
+            The office is a calm and welcoming space where we can sit in comfort
+            to explore what you would like to bring.
+          </p>
+          {/* Office Photos Section */}
+          <div className="office-photos">
+            <Row className="g-3 justify-content-center">
+              <Col xs={12} sm={6} md={4}>
+                <div className="photo-wrapper">
+                  <img src={off2} alt="Office 1" className="img-fluid" />
+                </div>
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <div className="photo-wrapper">
+                  <img src={off1} alt="Office 2" className="img-fluid" />
+                </div>
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <div className="photo-wrapper">
+                  <img src={off3} alt="Office 3" className="img-fluid" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </section>
 
       {/* Home Visits Section */}
-      <section className="home-visits mb-4">
-        <h3>Home Visits – Therapy in the Comfort of Your Own Space</h3>
-        <p>
-          If attending sessions in person is difficult due to accessibility,
-          health, mobility, or personal circumstances, I offer home visits to
-          ensure you can still receive the support you need. Therapy in your own
-          environment can feel more comfortable, grounding, and less
-          overwhelming, allowing you to engage at your own pace. Home visits are
-          arranged with care, discretion, and respect for your personal space.
-          If you feel this approach would support your wellbeing, we can discuss
-          availability, suitability, and any practical considerations during
-          your initial enquiry.
-        </p>
+      <section className="home-visits mb-5">
+        <div className="section-card">
+          <h3 className="mb-3">Home Visits – Therapy in the Comfort of Your Own Space</h3>
+          <p>
+            If attending sessions in person is difficult due to accessibility,
+            health, mobility, or personal circumstances, I offer home visits to
+            ensure you can still receive the support you need. Therapy in your own
+            environment can feel more comfortable, grounding, and less
+            overwhelming, allowing you to engage at your own pace. Home visits are
+            arranged with care, discretion, and respect for your personal space.
+            If you feel this approach would support your wellbeing, we can discuss
+            availability, suitability, and any practical considerations during
+            your initial enquiry.
+          </p>
+        </div>
       </section>
 
       {/* Fees Section */}
-      <section className="fees mb-4">
-        <h3>Fees</h3>
-        <ul>
-          <li>Initial 30 minute consultation - Free</li>
-          <li>Individual 60 minute sessions - £50</li>
-          <li>Individual 90 minute session - £75</li>
-        </ul>
+      <section className="fees mb-5">
+        <div className="section-card">
+          <h3 className="mb-3">Fees</h3>
+          <ul>
+            <li>Initial 30 minute consultation - Free</li>
+            <li>Individual 60 minute sessions - £50</li>
+            <li>Individual 90 minute session - £75</li>
+          </ul>
+        </div>
       </section>
 
       {/* Contact Button */}
