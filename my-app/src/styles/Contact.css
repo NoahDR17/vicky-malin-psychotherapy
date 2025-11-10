@@ -11,23 +11,6 @@
   color: var(--primary-color);
 }
 
-/* Contact Form Styling */
-.contact-page form {
-  background-color: var(--light-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-}
-
-.contact-page label {
-  font-weight: bold;
-}
-
-.contact-page .form-control {
-  margin-top: 0.5rem;
-}
-
 /* Contact Info Styling */
 .contact-info {
   margin-bottom: 1.5rem;
@@ -51,28 +34,6 @@
   overflow: hidden;
 }
 
-/* Confirmation Message Styling */
-.confirmation-message {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  margin: 1rem auto;
-  max-width: 500px;
-  position: relative;
-}
-
-.confirmation-message .close-button {
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
 /* Responsive Adjustments for screens up to 768px */
 @media (max-width: 768px) {
   .contact-page {
@@ -91,17 +52,8 @@
     font-size: 0.95rem;
   }
   
-  .contact-page form {
-    padding: 1.2rem;
-  }
-  
   .map-container iframe {
     height: 250px;
-  }
-  
-  .confirmation-message {
-    max-width: 90%;
-    padding: 0.7rem 0.8rem;
   }
 }
 
@@ -123,23 +75,7 @@
     font-size: 0.9rem;
   }
   
-  .contact-page form {
-    padding: 1rem;
-  }
-  
   .map-container iframe {
     height: 220px;
-  }
-  
-  .confirmation-message {
-    max-width: 100%;
-    padding: 0.6rem 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  .confirmation-message .close-button {
-    font-size: 1rem;
-    top: 2px;
-    right: 5px;
   }
 }
