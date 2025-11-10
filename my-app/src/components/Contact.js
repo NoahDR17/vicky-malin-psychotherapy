@@ -26,6 +26,7 @@ const Contact = () => {
                   <img src={iconMail} alt="Email" className="contact-icon" />
                   <h4>Email</h4>
                   <p>victoriamalin.counselling@gmail.com</p>
+                  <span className="click-hint">Click to send email</span>
                 </a>
               </div>
             </Col>
@@ -37,6 +38,7 @@ const Contact = () => {
                   <img src={iconPhone} alt="Phone" className="contact-icon" />
                   <h4>Phone</h4>
                   <p>(+44) 07378 382938</p>
+                  <span className="click-hint">Click to call</span>
                 </a>
               </div>
             </Col>
