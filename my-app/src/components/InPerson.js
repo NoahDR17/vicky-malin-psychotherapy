@@ -127,8 +127,8 @@ const InPerson = () => {
       </section>
 
       {/* Contact Button */}
-      <section className="contact-call text-center">
-        <Button href="/contact" variant="primary" size="lg" className="contact-button">
+      <section className="contact-call text-center mb-4">
+        <Button href="/contact" variant="primary">
           Contact Me
         </Button>
       </section>
