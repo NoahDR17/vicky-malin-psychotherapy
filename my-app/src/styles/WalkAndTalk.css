@@ -3,37 +3,62 @@
 .walk-and-talk {
     padding: 2rem 1rem;
     font-family: Arial, sans-serif;
+    max-width: 1200px;
+}
+
+/* Section Cards for better visual organization */
+.section-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Set all paragraph text to black */
 .walk-and-talk p {
     color: var(--text-black);
+    line-height: 1.7;
 }
 
 /* Header Section */
 .services-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .services-header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .services-header h2 {
     font-size: 2rem;
     color: var(--accent-color);
+    font-weight: 500;
 }
 
 .walk-and-talk h3 {
-    color: var(--text-green);
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Introduction Section */
+.service-intro {
+    margin-bottom: 3rem;
 }
 
 /* Photo Section */
 .service-photo {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .photo-container {
@@ -52,13 +77,14 @@
 
 /* Description Section */
 .service-description {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .service-description h3 {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .service-description h4 {
@@ -68,32 +94,35 @@
 }
 
 .service-description p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.05rem;
+    line-height: 1.7;
     margin-bottom: 1rem;
 }
 
 /* Fees Section */
 .fees {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .fees h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .fees ul {
     list-style: none;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .fees ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
     position: relative;
+    color: var(--primary-color);
+    line-height: 1.6;
 }
 
 .fees ul li::before {
@@ -101,6 +130,12 @@
     position: absolute;
     left: 0;
     color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    margin-bottom: 3rem;
 }
 
 /* Contact Button Section */
@@ -115,6 +150,10 @@
         padding: 1rem;
     }
 
+    .section-card {
+        padding: 1.5rem;
+    }
+
     .services-header h1 {
         font-size: 2rem;
     }
@@ -124,7 +163,7 @@
     }
 
     .service-description p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
     .photo-container img {
@@ -134,6 +173,10 @@
 
 /* Further Adjustments for very small screens (up to 576px) */
 @media (max-width: 576px) {
+    .section-card {
+        padding: 1.25rem;
+    }
+
     .services-header h1 {
         font-size: 1.8rem;
     }
@@ -143,12 +186,13 @@
     }
 
     .service-description h3,
-    .service-description h4 {
-        font-size: 1.3rem;
+    .service-description h4,
+    .walk-and-talk h3 {
+        font-size: 1.5rem;
     }
 
     .service-description p {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .photo-container img {
