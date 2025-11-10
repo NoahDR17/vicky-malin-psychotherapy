@@ -46,7 +46,15 @@ const NavBar = () => {
             <Nav.Link as={NavLink} to="/about" onClick={handleNavClick}>
               About Me
             </Nav.Link>
-            <NavDropdown title="Services" id="services-dropdown" className='dropdown'>
+            <NavDropdown 
+              title={
+                <>
+                  Services <span className="dropdown-icon">▼</span>
+                </>
+              } 
+              id="services-dropdown" 
+              className='dropdown'
+            >
               <NavDropdown.Item
                 as={NavLink}
                 to="/services/in-person"

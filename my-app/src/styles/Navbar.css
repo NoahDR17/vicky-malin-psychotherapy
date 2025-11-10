@@ -2,6 +2,15 @@
 
 .navbar {
     background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand styling */
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 /* Base styling for all nav links */
@@ -17,6 +26,8 @@
 .navbar .nav-link:focus {
     color: var(--text-white);
     transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
 }
 
 /* Hover effect */
@@ -33,6 +44,19 @@
     border-bottom: 2px solid var(--accent-color) !important;
 }
 
+/* Dropdown icon styling */
+.dropdown-icon {
+    display: inline-block;
+    margin-left: 0.3rem;
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when dropdown is open */
+.navbar .nav-link.dropdown-toggle[aria-expanded="true"] .dropdown-icon {
+    transform: rotate(180deg);
+}
+
 /* New rule: When the dropdown toggle (Services) is open, change its color */
 .navbar .nav-link.dropdown-toggle[aria-expanded="true"] {
     color: var(--accent-color) !important;
@@ -42,17 +66,23 @@
 .navbar .dropdown-menu {
     background-color: var(--primary-color);
     border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .navbar .dropdown-menu .dropdown-item {
     color: var(--text-white);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    padding: 0.6rem 1.5rem;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item:focus {
     background-color: var(--secondary-light);
     color: var(--primary-color) !important;
+    padding-left: 2rem;
 }
 
 /* Customize the toggle button */
