@@ -48,12 +48,17 @@
   text-decoration: none;
   color: var(--text-black);
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 a.contact-icon-link:hover {
   transform: translateY(-4px);
   color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .contact-icon {
@@ -80,6 +85,22 @@ a.contact-icon-link:hover {
   color: var(--text-black);
   margin: 0;
   line-height: 1.6;
+}
+
+/* Click hint styling */
+.click-hint {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+a.contact-icon-link:hover .click-hint {
+  opacity: 1;
+  font-weight: 600;
 }
 
 /* Google Map Styling - matching service pages */
@@ -124,6 +145,10 @@ a.contact-icon-link:hover {
   .contact-item p {
     font-size: 0.95rem;
   }
+
+  .click-hint {
+    font-size: 0.8rem;
+  }
   
   .map-container iframe {
     height: 300px;
@@ -155,6 +180,10 @@ a.contact-icon-link:hover {
   
   .contact-item p {
     font-size: 0.9rem;
+  }
+
+  .click-hint {
+    font-size: 0.75rem;
   }
   
   .map-container iframe {
