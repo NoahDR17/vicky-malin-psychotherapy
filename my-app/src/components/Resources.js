@@ -3,6 +3,17 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../styles/Resources.css';
 
 const Resources = () => {
+    // Helper function to extract domain name from URL
+    const extractDomainName = (url) => {
+        try {
+            const urlObj = new URL(url);
+            // Remove 'www.' prefix and return the hostname
+            return urlObj.hostname.replace(/^www\./, '');
+        } catch (e) {
+            return '';
+        }
+    };
+
     const resourceCategories = [
         {
             title: "Crisis Support",
@@ -102,7 +113,7 @@ const Resources = () => {
                                                         rel="noopener noreferrer"
                                                         className="resource-link"
                                                     >
-                                                        Visit website →
+                                                        Visit website ({extractDomainName(resource.url)}) →
                                                     </a>
                                                     {resource.additionalLink && (
                                                         <>
