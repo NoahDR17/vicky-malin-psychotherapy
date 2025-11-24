@@ -38,4 +38,12 @@ describe('Resources Component', () => {
       expect(link).toHaveAttribute('rel', 'noopener noreferrer');
     });
   });
+
+  test('does not display empty parentheses for any resource', () => {
+    render(<Resources />);
+    
+    // Ensure no link contains "Visit website () →" which would indicate a failed domain extraction
+    const allLinks = screen.queryByText(/Visit website \(\) →/i);
+    expect(allLinks).not.toBeInTheDocument();
+  });
 });

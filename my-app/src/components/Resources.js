@@ -10,7 +10,8 @@ const Resources = () => {
             // Remove 'www.' prefix and return the hostname
             return urlObj.hostname.replace(/^www\./, '');
         } catch (e) {
-            return '';
+            // Return 'link' as fallback for invalid URLs
+            return 'link';
         }
     };
 
