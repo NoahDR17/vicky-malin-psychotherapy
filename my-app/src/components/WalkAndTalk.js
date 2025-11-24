@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import '../styles/WalkAndTalk.css';
 
 const WalkAndTalk = () => {
@@ -59,6 +59,13 @@ const WalkAndTalk = () => {
           <h3 className="text-center mb-3">Coming Soon</h3>
           <p className="text-center">This service is not currently available. Please check back soon for updates.</p>
         </div>
+      </section>
+
+      {/* Contact Button */}
+      <section className="contact-call text-center mb-4">
+        <Button href="/contact" variant="primary">
+          Contact Me
+        </Button>
       </section>
     </Container>
   );
